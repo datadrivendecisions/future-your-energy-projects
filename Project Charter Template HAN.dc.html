@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap"><style>
+body{background:#dedad3;margin:0}
+.intro{font:600 14px/1.5 ui-sans-serif,system-ui,sans-serif;color:#555;padding:40px 48px 8px;max-width:800px}
+.opt-row{display:flex;gap:56px;flex-wrap:wrap;align-items:flex-start;padding:24px 48px 100px}
+.opt-wrap{position:relative}
+.opt-badge{position:absolute;top:-30px;left:0;font:800 12px/1 ui-monospace,'JetBrains Mono',monospace;letter-spacing:.5px;background:#111;color:#fff;padding:6px 12px;text-decoration:none}
+.b-page{width:800px;min-height:1130px;background:#f5f3ee;border:6px solid #111;padding:40px 44px 56px;font-family:'JetBrains Mono',ui-monospace,monospace;color:#111;box-sizing:border-box;box-shadow:14px 14px 0 #111}
+.b-header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:8px solid #111;padding-bottom:24px;margin-bottom:20px}
+.b-logo{width:110px;height:auto;display:block}
+.b-titlewrap{text-align:right}
+.b-title{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:50px;line-height:.88;letter-spacing:-1.5px;text-transform:uppercase;margin:0}
+.b-sub{font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-top:8px}
+.b-meta{display:flex;border-bottom:3px solid #111;margin-bottom:36px}
+.b-metaitem{flex:1;padding:10px 14px;border-right:3px solid #111}
+.b-metaitem:last-child{border-right:none}
+.b-metalabel{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#666;margin-bottom:4px}
+.b-metaval{font-size:13px;font-weight:700}
+.b-section{margin-bottom:34px}
+.b-sectionhead{display:flex;align-items:center;gap:12px;border-bottom:4px solid #111;padding-bottom:8px;margin-bottom:16px}
+.b-num{background:#E40055;color:#fff;font-weight:800;font-size:14px;padding:4px 12px;transform:skewX(-10deg);display:inline-block}
+.b-sectiontitle{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:19px;text-transform:uppercase;letter-spacing:.5px}
+.b-grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.b-field{margin-bottom:14px}
+.b-label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;color:#333}
+.b-blank{border:2px solid #111;background:#fff;min-height:18px;padding:8px 10px;font-size:13px;color:#aaa;font-style:italic}
+.b-blanktall{border:2px solid #111;background:#fff;min-height:96px;padding:12px;font-size:13px;color:#aaa;font-style:italic}
+.b-hint{font-size:11px;color:#666;margin-top:8px}
+.b-table{width:100%;border-collapse:collapse;font-size:12px}
+.b-table th{background:#111;color:#fff;text-align:left;padding:8px 10px;text-transform:uppercase;letter-spacing:.5px;font-size:11px;border:2px solid #111}
+.b-table td{border:2px solid #111;padding:14px 10px;height:14px}
+.sw-page{width:800px;min-height:1130px;background:#fff;padding:72px 64px;font-family:'Helvetica Neue',Arial,sans-serif;color:#161616;box-sizing:border-box;box-shadow:0 20px 50px rgba(0,0,0,.12)}
+.sw-header{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:20px;border-bottom:1px solid #111;margin-bottom:6px}
+.sw-logo{width:80px;height:auto;display:block}
+.sw-title{font-weight:700;font-size:34px;letter-spacing:.2px;text-transform:uppercase;margin:0}
+.sw-titlewrap{text-align:right}
+.sw-sub{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#E40055;margin-top:8px;font-weight:700}
+.sw-meta{display:flex;gap:40px;padding:18px 0 40px;border-bottom:1px solid #111;margin-bottom:44px}
+.sw-metaitem{flex:1}
+.sw-metalabel{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#E40055;margin-bottom:5px;font-weight:700}
+.sw-metaval{font-size:14px}
+.sw-section{display:grid;grid-template-columns:120px 1fr;gap:24px;margin-bottom:52px}
+.sw-sectionnum{font-size:13px;font-weight:700;color:#E40055;letter-spacing:1px}
+.sw-sectiontitle{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-top:6px}
+.sw-field{margin-bottom:22px}
+.sw-label{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#777;margin-bottom:6px}
+.sw-blank{border-bottom:1px solid #111;min-height:14px;font-size:13px;color:#aaa;font-style:italic;padding-bottom:6px}
+.sw-blanktall{border-bottom:1px solid #111;min-height:80px;font-size:13px;color:#aaa;font-style:italic}
+.sw-hint{font-size:11px;color:#888;margin-top:10px}
+.sw-table{width:100%;border-collapse:collapse;font-size:12.5px}
+.sw-table th{text-align:left;padding:8px 4px;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#E40055;border-bottom:1px solid #111;font-weight:700}
+.sw-table td{padding:14px 4px;border-bottom:1px solid #ddd;color:#ccc;font-style:italic;font-size:12px}
+.ds-page{width:800px;min-height:1130px;background:#fff;border:3px solid #111;box-sizing:border-box;font-family:'Space Grotesk',Futura,'Century Gothic',sans-serif;color:#111;box-shadow:0 20px 50px rgba(0,0,0,.12)}
+.ds-header{display:grid;grid-template-columns:2fr 1fr;border-bottom:3px solid #111}
+.ds-headerpink{background:#E40055;color:#fff;padding:32px 36px;border-right:3px solid #111}
+.ds-title{font-weight:700;font-size:32px;text-transform:uppercase;letter-spacing:.5px;margin:0 0 10px}
+.ds-sub{font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.9}
+.ds-logobox{display:flex;align-items:center;justify-content:center;padding:20px}
+.ds-logo{width:100px;height:auto}
+.ds-meta{display:flex;border-bottom:3px solid #111}
+.ds-metaitem{flex:1;padding:14px 20px;border-right:3px solid #111}
+.ds-metaitem:last-child{border-right:none}
+.ds-metalabel{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#666;margin-bottom:4px;font-weight:700}
+.ds-metaval{font-size:13px;font-weight:600}
+.ds-section{border-bottom:3px solid #111;padding:26px 36px}
+.ds-section:last-child{border-bottom:none}
+.ds-sectionhead{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.ds-num{background:#111;color:#fff;font-weight:700;font-size:14px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ds-sectiontitle{font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.3px}
+.ds-grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ds-field{margin-bottom:14px}
+.ds-label{font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;margin-bottom:6px;color:#333}
+.ds-blank{border:2px solid #111;min-height:18px;padding:8px 10px;font-size:13px;color:#aaa;font-style:italic}
+.ds-blanktall{border:2px solid #111;min-height:90px;padding:12px;font-size:13px;color:#aaa;font-style:italic}
+.ds-hint{font-size:11px;color:#666;margin-top:8px}
+.ds-table{width:100%;border-collapse:collapse;font-size:12px}
+.ds-table th{background:#111;color:#fff;text-align:left;padding:8px 10px;text-transform:uppercase;letter-spacing:.5px;font-size:11px;border:2px solid #111}
+.ds-table td{border:2px solid #111;padding:14px 10px;color:#ccc;font-style:italic}
+</style></helmet>
+<div class="intro">Project Charter template for HAN University of Applied Sciences — three fully distinct design-school directions using the same content. Compare <a href="#1a">1a</a> Brutalist, <a href="#1b">1b</a> Swiss / International Typographic, and <a href="#1c">1c</a> De Stijl, then tell me which to take further (or mix elements).</div>
+<section class="opt-row">
+<div class="opt-wrap" id="1a"><a class="opt-badge" href="#1a">1a — Brutalist</a>
+<div class="b-page">
+<div class="b-header"><img class="b-logo" src="assets/han-logo.png" alt="HAN logo"><div class="b-titlewrap"><h1 class="b-title">Project<br>Charter</h1><div class="b-sub">Minor Data Driven Decision Making</div></div></div>
+<div class="b-meta">
+<div class="b-metaitem"><div class="b-metalabel">Project Code</div><div class="b-metaval">PC-000</div></div>
+<div class="b-metaitem"><div class="b-metalabel">Date</div><div class="b-metaval">DD/MM/YYYY</div></div>
+<div class="b-metaitem"><div class="b-metalabel">Version</div><div class="b-metaval">0.1</div></div>
+<div class="b-metaitem"><div class="b-metalabel">Status</div><div class="b-metaval">Draft</div></div>
+</div>
+<div class="b-section"><div class="b-sectionhead"><span class="b-num">01</span><span class="b-sectiontitle">Project Name, Sponsor &amp; Project Lead</span></div>
+<div class="b-grid2">
+<div class="b-field"><div class="b-label">Project Name</div><div class="b-blank">e.g. Redesign of the Student Portal</div></div>
+<div class="b-field"><div class="b-label">Faculty / Department</div><div class="b-blank">e.g. Faculty of Engineering</div></div>
+<div class="b-field"><div class="b-label">Sponsor / Commissioner</div><div class="b-blank">Name, role, organization</div></div>
+<div class="b-field"><div class="b-label">Project Lead</div><div class="b-blank">Name and contact details</div></div>
+</div></div>
+<div class="b-section"><div class="b-sectionhead"><span class="b-num">02</span><span class="b-sectiontitle">Background &amp; Problem Statement</span></div>
+<div class="b-blanktall">Describe the context, the trigger, and the problem or opportunity this project addresses.</div></div>
+<div class="b-section"><div class="b-sectionhead"><span class="b-num">03</span><span class="b-sectiontitle">Objectives / SMART Goals</span></div>
+<div class="b-field"><div class="b-label">1.</div><div class="b-blank">State the first objective in one sentence</div></div>
+<div class="b-field"><div class="b-label">2.</div><div class="b-blank">State the second objective</div></div>
+<div class="b-field"><div class="b-label">3.</div><div class="b-blank">State the third objective (optional)</div></div>
+<div class="b-hint">Check that each goal is Specific, Measurable, Achievable, Relevant and Time-bound.</div></div>
+<div class="b-section"><div class="b-sectionhead"><span class="b-num">04</span><span class="b-sectiontitle">Stakeholders &amp; Roles</span></div>
+<table class="b-table"><tr><th>Name</th><th>Role</th><th>Organization</th><th>Involvement</th></tr>
+<tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr>
+</table></div>
+</div></div>
+<div class="opt-wrap" id="1b"><a class="opt-badge" href="#1b">1b — Swiss / International Typographic</a>
+<div class="sw-page">
+<div class="sw-header"><img class="sw-logo" src="assets/han-logo.png" alt="HAN logo"><div class="sw-titlewrap"><h1 class="sw-title">Project Charter</h1><div class="sw-sub">Minor Data Driven Decision Making</div></div></div>
+<div class="sw-meta">
+<div class="sw-metaitem"><div class="sw-metalabel">Project Code</div><div class="sw-metaval">PC-000</div></div>
+<div class="sw-metaitem"><div class="sw-metalabel">Date</div><div class="sw-metaval">DD/MM/YYYY</div></div>
+<div class="sw-metaitem"><div class="sw-metalabel">Version</div><div class="sw-metaval">0.1</div></div>
+<div class="sw-metaitem"><div class="sw-metalabel">Status</div><div class="sw-metaval">Draft</div></div>
+</div>
+<div class="sw-section"><div><div class="sw-sectionnum">01</div><div class="sw-sectiontitle">Project Name,<br>Sponsor &amp;<br>Project Lead</div></div>
+<div><div class="sw-field"><div class="sw-label">Project Name</div><div class="sw-blank">e.g. Redesign of the Student Portal</div></div>
+<div class="sw-field"><div class="sw-label">Faculty / Department</div><div class="sw-blank">e.g. Faculty of Engineering</div></div>
+<div class="sw-field"><div class="sw-label">Sponsor / Commissioner</div><div class="sw-blank">Name, role, organization</div></div>
+<div class="sw-field"><div class="sw-label">Project Lead</div><div class="sw-blank">Name and contact details</div></div></div></div>
+<div class="sw-section"><div><div class="sw-sectionnum">02</div><div class="sw-sectiontitle">Background &amp;<br>Problem Statement</div></div>
+<div class="sw-blanktall">Describe the context, the trigger, and the problem or opportunity this project addresses.</div></div>
+<div class="sw-section"><div><div class="sw-sectionnum">03</div><div class="sw-sectiontitle">Objectives /<br>SMART Goals</div></div>
+<div><div class="sw-field"><div class="sw-label">1</div><div class="sw-blank">State the first objective in one sentence</div></div>
+<div class="sw-field"><div class="sw-label">2</div><div class="sw-blank">State the second objective</div></div>
+<div class="sw-field"><div class="sw-label">3</div><div class="sw-blank">State the third objective (optional)</div></div>
+<div class="sw-hint">Check that each goal is Specific, Measurable, Achievable, Relevant and Time-bound.</div></div></div>
+<div class="sw-section"><div><div class="sw-sectionnum">04</div><div class="sw-sectiontitle">Stakeholders &amp;<br>Roles</div></div>
+<table class="sw-table"><tr><th>Name</th><th>Role</th><th>Organization</th><th>Involvement</th></tr>
+<tr><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+</table></div>
+</div></div>
+<div class="opt-wrap" id="1c"><a class="opt-badge" href="#1c">1c — De Stijl / Dutch Modernist</a>
+<div class="ds-page">
+<div class="ds-header"><div class="ds-headerpink"><h1 class="ds-title">Project Charter</h1><div class="ds-sub">Minor Data Driven Decision Making</div></div><div class="ds-logobox"><img class="ds-logo" src="assets/han-logo.png" alt="HAN logo"></div></div>
+<div class="ds-meta">
+<div class="ds-metaitem"><div class="ds-metalabel">Project Code</div><div class="ds-metaval">PC-000</div></div>
+<div class="ds-metaitem"><div class="ds-metalabel">Date</div><div class="ds-metaval">DD/MM/YYYY</div></div>
+<div class="ds-metaitem"><div class="ds-metalabel">Version</div><div class="ds-metaval">0.1</div></div>
+<div class="ds-metaitem"><div class="ds-metalabel">Status</div><div class="ds-metaval">Draft</div></div>
+</div>
+<div class="ds-section"><div class="ds-sectionhead"><span class="ds-num">01</span><span class="ds-sectiontitle">Project Name, Sponsor &amp; Project Lead</span></div>
+<div class="ds-grid2">
+<div class="ds-field"><div class="ds-label">Project Name</div><div class="ds-blank">e.g. Redesign of the Student Portal</div></div>
+<div class="ds-field"><div class="ds-label">Faculty / Department</div><div class="ds-blank">e.g. Faculty of Engineering</div></div>
+<div class="ds-field"><div class="ds-label">Sponsor / Commissioner</div><div class="ds-blank">Name, role, organization</div></div>
+<div class="ds-field"><div class="ds-label">Project Lead</div><div class="ds-blank">Name and contact details</div></div>
+</div></div>
+<div class="ds-section"><div class="ds-sectionhead"><span class="ds-num">02</span><span class="ds-sectiontitle">Background &amp; Problem Statement</span></div>
+<div class="ds-blanktall">Describe the context, the trigger, and the problem or opportunity this project addresses.</div></div>
+<div class="ds-section"><div class="ds-sectionhead"><span class="ds-num">03</span><span class="ds-sectiontitle">Objectives / SMART Goals</span></div>
+<div class="ds-field"><div class="ds-label">1.</div><div class="ds-blank">State the first objective in one sentence</div></div>
+<div class="ds-field"><div class="ds-label">2.</div><div class="ds-blank">State the second objective</div></div>
+<div class="ds-field"><div class="ds-label">3.</div><div class="ds-blank">State the third objective (optional)</div></div>
+<div class="ds-hint">Check that each goal is Specific, Measurable, Achievable, Relevant and Time-bound.</div></div>
+<div class="ds-section"><div class="ds-sectionhead"><span class="ds-num">04</span><span class="ds-sectiontitle">Stakeholders &amp; Roles</span></div>
+<table class="ds-table"><tr><th>Name</th><th>Role</th><th>Organization</th><th>Involvement</th></tr>
+<tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr>
+</table></div>
+</div></div>
+</section>
+
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap"><style>
+body{background:#dedad3;margin:0}
+.sg-page{width:calc(100% - 64px);max-width:1000px;margin:40px auto;background:#f5f3ee;border:6px solid #111;padding:48px 56px 64px;font-family:'JetBrains Mono',ui-monospace,monospace;color:#111;box-sizing:border-box;box-shadow:14px 14px 0 #111}
+.sg-header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:8px solid #111;padding-bottom:28px;margin-bottom:8px}
+.sg-logo{width:110px;height:auto;display:block}
+.sg-titlewrap{text-align:right}
+.sg-title{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:52px;line-height:.88;letter-spacing:-1.5px;text-transform:uppercase;margin:0}
+.sg-sub{font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-top:10px;color:#666}
+.sg-intro{font-size:13px;color:#444;max-width:680px;line-height:1.6;margin:24px 0 0}
+.sg-section{padding:40px 0;border-bottom:4px solid #111}
+.sg-section:last-child{border-bottom:none}
+.sg-sectionhead{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.sg-num{background:#E40055;color:#fff;font-weight:800;font-size:14px;padding:4px 12px;transform:skewX(-10deg);display:inline-block}
+.sg-sectiontitle{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:23px;text-transform:uppercase;letter-spacing:.5px}
+.sg-note{font-size:13px;color:#444;max-width:640px;margin-bottom:24px;line-height:1.6}
+.sg-swatchrow{display:flex;gap:24px;flex-wrap:wrap}
+.sg-swatch{width:180px}
+.sg-swatchbox{width:180px;height:130px;border:2px solid #111}
+.sg-swatchname{font-weight:700;font-size:13px;margin-top:10px;text-transform:uppercase}
+.sg-swatchhex{font-size:12px;color:#666;margin-top:2px}
+.sg-swatchuse{font-size:11px;color:#666;margin-top:6px;line-height:1.5}
+.sg-specimen{display:flex;gap:48px;align-items:flex-end;margin-bottom:28px;flex-wrap:wrap}
+.sg-specimenbig{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:92px;line-height:.8;text-transform:uppercase}
+.sg-specimenmono{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:60px;line-height:.8}
+.sg-specimenlabel{font-size:11px;color:#666;max-width:260px;line-height:1.6}
+.sg-typetable{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
+.sg-typetable th{background:#111;color:#fff;text-align:left;padding:8px 10px;text-transform:uppercase;letter-spacing:.5px;font-size:11px;border:2px solid #111}
+.sg-typetable td{border:2px solid #111;padding:10px 10px}
+.sg-borderrow{display:flex;gap:32px;flex-wrap:wrap;align-items:flex-end;margin-bottom:32px}
+.sg-borderbox{width:130px;height:96px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;text-align:center}
+.sg-shadowdemo{display:flex;align-items:center;gap:60px;flex-wrap:wrap}
+.sg-shadowbox{width:170px;height:104px;background:#fff;border:2px solid #111;box-shadow:14px 14px 0 #111;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;text-align:center}
+.sg-shadowbad{width:170px;height:104px;background:#fff;border:2px solid #111;box-shadow:0 8px 20px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;text-align:center;color:#999}
+.sg-shadowlabel{font-size:11px;color:#666;text-align:center;margin-top:10px}
+.sg-metademo{display:flex;border:3px solid #111;margin-bottom:8px}
+.sg-metaitem{flex:1;padding:10px 14px;border-right:3px solid #111}
+.sg-metaitem:last-child{border-right:none}
+.sg-metalabel{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#666;margin-bottom:4px}
+.sg-metaval{font-size:13px;font-weight:700}
+.sg-fielddemo{border:2px solid #111;background:#fff;padding:8px 10px;font-size:13px;color:#aaa;font-style:italic;max-width:340px;margin-bottom:8px}
+.sg-compgrid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:12px}
+.sg-comptable{width:100%;border-collapse:collapse;font-size:12px}
+.sg-comptable th{background:#111;color:#fff;text-align:left;padding:6px 8px;text-transform:uppercase;letter-spacing:.5px;font-size:10px;border:2px solid #111}
+.sg-comptable td{border:2px solid #111;padding:10px 8px}
+.sg-logodemo{display:flex;align-items:center;gap:56px;flex-wrap:wrap}
+.sg-clearspace{border:2px dashed #E40055;padding:32px;display:inline-block;background:#fff}
+.sg-clearspacelogo{width:100px;height:auto;display:block}
+.sg-logorules{font-size:13px;color:#444;max-width:420px;line-height:1.7}
+.sg-dodont{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.sg-do,.sg-dont{padding:22px;border:2px solid #111;background:#fff}
+.sg-dolabel{display:inline-block;background:#E40055;color:#fff;font-weight:800;font-size:11px;padding:3px 10px;transform:skewX(-10deg);margin-bottom:14px}
+.sg-dontlabel{display:inline-block;background:#111;color:#fff;font-weight:800;font-size:11px;padding:3px 10px;transform:skewX(-10deg);margin-bottom:14px}
+.sg-list{margin:0;padding-left:18px;font-size:13px;line-height:1.9;color:#222}
+</style></helmet>
+<div class="sg-page">
+<div class="sg-header"><img class="sg-logo" src="assets/han-logo.png" alt="HAN logo"><div class="sg-titlewrap"><h1 class="sg-title">Brutalist<br>Style Guide</h1><div class="sg-sub">Project Charter design system</div></div></div>
+<div class="sg-intro">The visual rules behind the Brutalist project charter (1a): raw, high-contrast, structural. Everything below is derived directly from that design — reuse it to keep new brutalist materials consistent.</div>
+
+<div class="sg-section"><div class="sg-sectionhead"><span class="sg-num">01</span><span class="sg-sectiontitle">Color Palette</span></div>
+<div class="sg-swatchrow">
+<div class="sg-swatch"><div class="sg-swatchbox" style="background:#E40055"></div><div class="sg-swatchname">HAN Pink</div><div class="sg-swatchhex">#E40055</div><div class="sg-swatchuse">The one accent. Section number tags, hairline dividers on the meta bar hover, nothing else.</div></div>
+<div class="sg-swatch"><div class="sg-swatchbox" style="background:#111111"></div><div class="sg-swatchname">Ink</div><div class="sg-swatchhex">#111111</div><div class="sg-swatchuse">All borders, all body copy, all structural weight.</div></div>
+<div class="sg-swatch"><div class="sg-swatchbox" style="background:#F5F3EE;border:2px solid #111"></div><div class="sg-swatchname">Raw Paper</div><div class="sg-swatchhex">#F5F3EE</div><div class="sg-swatchuse">Page background. Never pure white — reads as stock, not screen.</div></div>
+<div class="sg-swatch"><div class="sg-swatchbox" style="background:#fff;border:2px solid #111"></div><div class="sg-swatchname">Field White</div><div class="sg-swatchhex">#FFFFFF</div><div class="sg-swatchuse">Fill for blanks, tables, and cards sitting on the paper.</div></div>
+</div></div>
+
+<div class="sg-section"><div class="sg-sectionhead"><span class="sg-num">02</span><span class="sg-sectiontitle">Typography</span></div>
+<div class="sg-specimen"><div class="sg-specimenbig">Aa</div><div class="sg-specimenlabel">Display — Arial / Helvetica, weight 900, uppercase, -1.5px tracking. Titles and section headings only.</div></div>
+<div class="sg-specimen"><div class="sg-specimenmono">Aa</div><div class="sg-specimenlabel">Text — JetBrains Mono. Carries every label, meta value, table cell and placeholder hint.</div></div>
+<table class="sg-typetable"><tr><th>Element</th><th>Typeface</th><th>Size / Weight</th><th>Treatment</th></tr>
+<tr><td>Page title (H1)</td><td>Arial / Helvetica</td><td>50px / 900</td><td>Uppercase, tight tracking</td></tr>
+<tr><td>Section title</td><td>Arial / Helvetica</td><td>19px / 900</td><td>Uppercase</td></tr>
+<tr><td>Meta label</td><td>JetBrains Mono</td><td>10px / 700</td><td>Uppercase, +1.5px tracking, grey #666</td></tr>
+<tr><td>Field label</td><td>JetBrains Mono</td><td>11px / 700</td><td>Uppercase, +1px tracking</td></tr>
+<tr><td>Body / value</td><td>JetBrains Mono</td><td>13px / 400</td><td>Sentence case</td></tr>
+<tr><td>Placeholder hint</td><td>JetBrains Mono</td><td>13px / 400</td><td>Italic, grey #aaa</td></tr>
+</table></div>
+
+<div class="sg-section"><div class="sg-sectionhead"><span class="sg-num">03</span><span class="sg-sectiontitle">Structure &amp; Weight</span></div>
+<div class="sg-note">Border weight signals hierarchy — the thicker the rule, the bigger the structural role it plays. Corners are always square; border-radius is never used.</div>
+<div class="sg-borderrow">
+<div><div class="sg-borderbox" style="border:6px solid #111">6px</div><div class="sg-shadowlabel">Outer page frame</div></div>
+<div><div class="sg-borderbox" style="border:4px solid #111">4px</div><div class="sg-shadowlabel">Section divider</div></div>
+<div><div class="sg-borderbox" style="border:3px solid #111">3px</div><div class="sg-shadowlabel">Meta bar dividers</div></div>
+<div><div class="sg-borderbox" style="border:2px solid #111">2px</div><div class="sg-shadowlabel">Fields, tables, cards</div></div>
+</div>
+<div class="sg-shadowdemo">
+<div><div class="sg-shadowbox">14px / 14px offset, 0 blur</div><div class="sg-shadowlabel">Correct — hard, solid, no blur</div></div>
+<div><div class="sg-shadowbad">Soft, blurred, translucent</div><div class="sg-shadowlabel">Wrong — reads as corporate, not raw</div></div>
+</div></div>
+
+<div class="sg-section"><div class="sg-sectionhead"><span class="sg-num">04</span><span class="sg-sectiontitle">Components</span></div>
+<div class="sg-note">This heading is the component: a skewed pink tag plus an uppercase display label, always paired.</div>
+<div class="sg-compgrid">
+<div><div class="sg-note" style="margin-bottom:10px">Meta bar — equal-width cells, 3px dividers, mono label over bold value.</div>
+<div class="sg-metademo"><div class="sg-metaitem"><div class="sg-metalabel">Project Code</div><div class="sg-metaval">PC-000</div></div><div class="sg-metaitem"><div class="sg-metalabel">Status</div><div class="sg-metaval">Draft</div></div></div></div>
+<div><div class="sg-note" style="margin-bottom:10px">Blank field — 2px border, white fill, italic grey placeholder text.</div>
+<div class="sg-fielddemo">e.g. Redesign of the Student Portal</div></div>
+</div>
+<table class="sg-comptable"><tr><th>Name</th><th>Role</th><th>Organization</th></tr><tr><td></td><td></td><td></td></tr></table>
+<div class="sg-note" style="margin-top:10px">Table — 2px borders on every cell, black header row, white uppercase mono labels.</div>
+</div>
+
+<div class="sg-section"><div class="sg-sectionhead"><span class="sg-num">05</span><span class="sg-sectiontitle">Logo Usage</span></div>
+<div class="sg-logodemo">
+<div class="sg-clearspace"><img class="sg-clearspacelogo" src="assets/han-logo.png" alt="HAN logo clear space"></div>
+<div class="sg-logorules">Keep clear space around the logo equal to at least the height of the springboard mark. Place it only on Raw Paper or White — never inside a pink or black panel. Minimum width 80px. Never rotate, skew or recolor the mark itself — skewing is reserved for the pink number tags only.</div>
+</div></div>
+
+<div class="sg-section"><div class="sg-sectionhead"><span class="sg-num">06</span><span class="sg-sectiontitle">Do &amp; Don't</span></div>
+<div class="sg-dodont">
+<div class="sg-do"><span class="sg-dolabel">Do</span><ul class="sg-list"><li>Use hard, offset drop shadows with zero blur</li><li>Keep every corner square — no border-radius, anywhere</li><li>Pair heavy uppercase display type with plain mono for data</li><li>Let pink appear in exactly one role: the section number tag</li></ul></div>
+<div class="sg-dont"><span class="sg-dontlabel">Don't</span><ul class="sg-list"><li>Soften borders or shadows to look "friendlier"</li><li>Introduce a third accent color</li><li>Center-align body copy — keep it left or right, never centered</li><li>Shrink the outer frame below 4px; it's structural, not decorative</li></ul></div>
+</div></div>
+
+</div>
+
+</x-dc>
+</body>
+</html>

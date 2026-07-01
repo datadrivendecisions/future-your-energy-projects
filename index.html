@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3DMiB Challenge — Project Charters</title>
+</head>
+<body>
+<style>
+body{background:#dedad3;margin:0;font-family:'JetBrains Mono',ui-monospace,monospace}
+.i-page{width:calc(100% - 64px);max-width:900px;margin:40px auto;background:#f5f3ee;border:6px solid #111;padding:48px 56px 64px;color:#111;box-sizing:border-box;box-shadow:14px 14px 0 #111}
+.i-header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:8px solid #111;padding-bottom:28px;margin-bottom:28px;gap:24px}
+.i-logo{width:110px;height:auto;display:block;flex-shrink:0}
+.i-titlewrap{text-align:right}
+.i-title{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:44px;line-height:.9;letter-spacing:-1.5px;text-transform:uppercase;margin:0}
+.i-sub{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-top:10px;color:#666}
+.i-intro{font-size:13px;line-height:1.7;color:#222;max-width:680px;margin-bottom:36px}
+.i-cardgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.i-card{border:2px solid #111;background:#fff;padding:24px;display:flex;flex-direction:column}
+.i-cardtag{display:inline-block;background:#E40055;color:#fff;font-weight:800;font-size:11px;padding:3px 10px;transform:skewX(-10deg);margin-bottom:16px;align-self:flex-start}
+.i-cardtitle{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:19px;text-transform:uppercase;letter-spacing:.3px;margin:0 0 12px;line-height:1.15}
+.i-cardtext{font-size:12.5px;line-height:1.7;color:#333;margin:0 0 20px;flex-grow:1}
+.i-cardlink{display:inline-block;background:#111;color:#fff;font-weight:800;font-size:12px;letter-spacing:.5px;text-transform:uppercase;text-decoration:none;padding:10px 16px;align-self:flex-start}
+.i-cardlink:hover{background:#E40055}
+.i-footer{margin-top:36px;padding-top:24px;border-top:4px solid #111;font-size:11px;color:#666;line-height:1.6}
+@media(max-width:680px){.i-cardgrid{grid-template-columns:1fr}}
+</style>
+<div class="i-page">
+<div class="i-header">
+<img class="i-logo" src="logo.png" alt="HAN logo">
+<div class="i-titlewrap">
+<h1 class="i-title">3DMiB<br>Challenge</h1>
+<div class="i-sub">Project Charters — Minor Data Driven Decision Making in Business</div>
+</div>
+</div>
+
+<div class="i-intro">Two project charters for the 3DMiB challenge, set by Jeroen Veen (Researcher HAN, Future Energy Research Group). P1 and P2 structure and unlock the FyE neighborhood data lake for the Elsweide case; P3 explores the behavioral obstacles to a Positive Energy District through an AI-persona simulation.</div>
+
+<div class="i-cardgrid">
+<div class="i-card">
+<span class="i-cardtag">P1 + P2</span>
+<h2 class="i-cardtitle">From Data Lake to Queryable Knowledge</h2>
+<p class="i-cardtext">Ontology and agent-ready access: structuring the Elsweide data lake into a defensible domain ontology, then making it queryable in plain language with source attribution. Team of 4.</p>
+<a class="i-cardlink" href="project-charter-p1-p2.html">Open charter →</a>
+</div>
+<div class="i-card">
+<span class="i-cardtag">P3</span>
+<h2 class="i-cardtitle">Simulacra: Behavioral Simulation</h2>
+<p class="i-cardtext">A first running system of AI personas that surface behavioral obstacles to PED interventions, grounded in game theory and behavioral economics. Team of 3.</p>
+<a class="i-cardlink" href="project-charter-p3.html">Open charter →</a>
+</div>
+</div>
+
+<div class="i-footer">Each charter page includes a "Download as PDF" button (top right) for a print-ready version.</div>
+</div>
+</body>
+</html>

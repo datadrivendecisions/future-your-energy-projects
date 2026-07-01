@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap"><style>
+body{background:#dedad3;margin:0}
+.c-page{width:calc(100% - 64px);max-width:900px;margin:40px auto;background:#f5f3ee;border:6px solid #111;padding:48px 56px 64px;font-family:'JetBrains Mono',ui-monospace,monospace;color:#111;box-sizing:border-box;box-shadow:14px 14px 0 #111}
+.c-header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:8px solid #111;padding-bottom:28px;margin-bottom:8px;gap:24px}
+.c-logo{width:110px;height:auto;display:block;flex-shrink:0}
+.c-titlewrap{text-align:right}
+.c-title{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:50px;line-height:.88;letter-spacing:-1.5px;text-transform:uppercase;margin:0}
+.c-sub{font-size:13px;letter-spacing:.3px;margin-top:12px;color:#333;max-width:400px;line-height:1.45;font-weight:700;margin-left:auto}
+.c-metagrid{display:grid;grid-template-columns:repeat(4,1fr);border-top:3px solid #111;border-left:3px solid #111;margin:28px 0 4px}
+.c-metaitem{border-right:3px solid #111;border-bottom:3px solid #111;padding:10px 14px}
+.c-metalabel{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#666;margin-bottom:4px}
+.c-metaval{font-size:12.5px;font-weight:700;line-height:1.4}
+.c-section{padding:32px 0;border-bottom:4px solid #111}
+.c-section:last-child{border-bottom:none}
+.c-sectionhead{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.c-num{background:#E40055;color:#fff;font-weight:800;font-size:14px;padding:4px 12px;transform:skewX(-10deg);display:inline-block;flex-shrink:0}
+.c-sectiontitle{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:19px;text-transform:uppercase;letter-spacing:.5px}
+.c-body{font-size:13px;line-height:1.7;color:#222;margin:0 0 14px}
+.c-body:last-child{margin-bottom:0}
+.c-subhead{font-weight:800;font-size:12.5px;text-transform:uppercase;letter-spacing:.5px;margin:20px 0 8px;color:#111}
+.c-subhead:first-child{margin-top:0}
+.c-list{margin:0 0 14px;padding-left:20px;font-size:13px;line-height:1.8;color:#222}
+.c-list li{margin-bottom:6px}
+.c-list:last-child{margin-bottom:0}
+.c-note{border:2px solid #111;background:#fff;padding:14px 16px;font-size:12.5px;color:#333;line-height:1.6;margin-bottom:18px}
+.c-notelabel{font-weight:800;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;display:block}
+.c-scopegrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:4px}
+.c-scopebox{padding:20px;border:2px solid #111;background:#fff}
+.c-scopelabel-in{display:inline-block;background:#E40055;color:#fff;font-weight:800;font-size:11px;padding:3px 10px;transform:skewX(-10deg);margin-bottom:14px}
+.c-scopelabel-out{display:inline-block;background:#111;color:#fff;font-weight:800;font-size:11px;padding:3px 10px;transform:skewX(-10deg);margin-bottom:14px}
+.c-table{width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:4px}
+.c-table th{background:#111;color:#fff;text-align:left;padding:8px 10px;text-transform:uppercase;letter-spacing:.5px;font-size:11px;border:2px solid #111}
+.c-table td{border:2px solid #111;padding:10px 10px;vertical-align:top;line-height:1.55}
+.c-video{border:2px solid #111;background:#fff;margin-bottom:20px;max-width:400px;position:relative}
+.c-video img{width:100%;display:block;border-bottom:2px solid #111}
+.c-playbadge{position:absolute;top:10px;left:10px;background:#111;color:#fff;font-weight:800;font-size:11px;padding:4px 10px;letter-spacing:.5px}
+.c-videocaption{padding:12px 14px}
+.c-videotitle{font-weight:700;font-size:12.5px;margin-bottom:6px;line-height:1.4}
+.c-videourl{font-size:11.5px;word-break:break-all}
+.c-videourl a,.c-body a{color:#111}
+@media(max-width:680px){.c-metagrid{grid-template-columns:repeat(2,1fr)}.c-scopegrid{grid-template-columns:1fr}}
+.c-printbtn{position:fixed;top:24px;right:24px;background:#111;color:#fff;font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:800;font-size:12px;letter-spacing:.5px;text-transform:uppercase;padding:12px 18px;border:2px solid #111;box-shadow:6px 6px 0 #E40055;cursor:pointer;z-index:100}
+.c-printbtn:hover{background:#E40055;border-color:#111}
+@media print{
+.no-print{display:none!important}
+body{background:#fff}
+.c-page{box-shadow:none;margin:0;border-width:4px;width:100%;max-width:100%}
+.c-section,.c-scopebox,.c-video,.c-figure,.c-note,.c-table tr{break-inside:avoid}
+a{color:#111!important;text-decoration:underline}
+@page{margin:14mm}
+}
+</style></helmet>
+<button class="c-printbtn no-print" onclick="window.print()">⬇ Download as PDF</button>
+<div class="c-page">
+
+<div class="c-header">
+<img class="c-logo" src="logo.png" alt="HAN logo">
+<div class="c-titlewrap">
+<h1 class="c-title">Project<br>Charter</h1>
+<div class="c-sub">From Data Lake to Queryable Knowledge — Ontology and Agent-Ready Access</div>
+</div>
+</div>
+
+<div class="c-metagrid">
+<div class="c-metaitem"><div class="c-metalabel">Client</div><div class="c-metaval">Jeroen Veen, Researcher HAN — Future Energy (FyE) Research Group</div></div>
+<div class="c-metaitem"><div class="c-metalabel">Team</div><div class="c-metaval">4 students, Minor Data Driven Decision Making in Business</div></div>
+<div class="c-metaitem"><div class="c-metalabel">Projects</div><div class="c-metaval">P1 (Structuring) + P2 (Making Accessible)</div></div>
+<div class="c-metaitem"><div class="c-metalabel">Status</div><div class="c-metaval">Draft</div></div>
+<div class="c-metaitem"><div class="c-metalabel">Charter Presented</div><div class="c-metaval">3 September 2026</div></div>
+<div class="c-metaitem"><div class="c-metalabel">Team Allocation</div><div class="c-metaval">Week of 7 September 2026</div></div>
+<div class="c-metaitem"><div class="c-metalabel">Kick-off</div><div class="c-metaval">10 September 2026</div></div>
+<div class="c-metaitem"><div class="c-metalabel">Final Presentation</div><div class="c-metaval">14 January 2027</div></div>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">00</span><span class="c-sectiontitle">Starter Document: The WHY of the Energy Transition</span></div>
+
+<div class="c-video">
+<a href="https://youtu.be/lOOQVyNERrs" target="_blank" rel="noopener"><span class="c-playbadge">▶ WATCH</span><img src="https://img.youtube.com/vi/lOOQVyNERrs/hqdefault.jpg" alt="Understand Electrification — Diana Gragg, Stanford Understand Energy"></a>
+<div class="c-videocaption">
+<div class="c-videotitle">Understand Electrification — Diana Gragg, Stanford Understand Energy</div>
+<div class="c-videourl"><a href="https://youtu.be/lOOQVyNERrs" target="_blank" rel="noopener">https://youtu.be/lOOQVyNERrs</a></div>
+</div>
+</div>
+
+<div class="c-body">As an introduction to this project, the team watches the lecture <em>"Understand Electrification"</em> by Diana Gragg (Stanford Understand Energy, recorded June 2026). The lecture explains what electrification means — shifting space heating, water heating, industry, and mobility from fossil fuels to electricity — through the examples of heat pumps and electric vehicles, and discusses both the benefits and the challenges involved.</div>
+
+<div class="c-body">The core argument: electrification is attractive because the same energy service (heat, transport) is often delivered three to four times more efficiently through electricity, resulting in less air pollution at the point of use, less dependence on any single fuel or country, and a system that gets cleaner over time even while the appliance (heat pump, car) stays in service for fifteen to twenty years. But that same shift runs into real constraints: the grid must be able to absorb growing demand, electrification often requires costly upfront investment, reliability becomes more important once households depend on a single system, and how electricity tariffs are structured determines whether the transition unfolds fairly.</div>
+
+<div class="c-subhead">Relevance to This Project</div>
+<div class="c-body">This exact tension between opportunity and obstacle is what the FyE data-lake case study Elsweide is about. Grid capacity and smart/grid-aware charging (a recurring theme in the video, framed as "being smart about when and where you add demand to the grid") are literally one of the data sources in the data lake. The investment barriers and tariff structures discussed in the video map onto the economic/business-case and social/support obstacle categories; the reliability and climate risks map onto the climate-risk &amp; living-environment category. This team must make that web of relationships explicit — which concept relates to which obstacle, and which source substantiates it — in the ontology (P1), and then make it queryable through a natural-language interface (P2) so that a resident, policymaker, or grid operator can ask about it in plain language.</div>
+
+<div class="c-subhead">Kick-off Assignment: Reflection Questions (Week 1)</div>
+<div class="c-body">After watching the video, each team member answers the following three questions individually, then discusses the answers together as input for the week-1 concept map:</div>
+<ol class="c-list">
+<li>At this point you have no access to the data lake itself — only this charter and the lecture. This charter already names six obstacle categories (grid/technical, ownership &amp; organization, social support, permitting &amp; spatial planning, economic/business case, climate risk &amp; living environment). Based only on those categories and the lecture, which grid-capacity, cost, and reliability themes from the video do you expect to map onto which category — and for which theme do you suspect there may be no matching FyE source at all yet? Treat this as a first, testable guess at a blind spot, to be checked once you get access to the data lake.</li>
+<li>The lecture argues that electrifying now can be worthwhile even without an immediate benefit, because the grid gets cleaner over time while the appliance keeps running. How would you capture that kind of "yes, but" nuance as a relation between a concept and an obstacle in an ontology, without it becoming a vague or misleading link?</li>
+<li>If a resident, a grid operator, and a policymaker each asked the natural-language assistant a question inspired by the video (e.g. "why would a heat pump help here?", "does the grid have room for this?", "what would this cost me upfront?"), what would a good, sourced answer look like for each — and where do you expect the assistant to fail?</li>
+</ol>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">01</span><span class="c-sectiontitle">Background</span></div>
+<div class="c-body">Within FyE, work is underway on the energy transition in residential neighborhoods. For this purpose, a <strong>data lake</strong> exists: a collection of raw, unstructured data sources (grid capacity, cadastral parcels, liveability/energy poverty, zoning plans, climate-effect atlas, research agenda/business case) with no predefined database model. Meaning only emerges once you ask a question of it.</div>
+<div class="c-body">The 3DMiB challenge focuses on two layers needed to make that data lake usable:</div>
+<ul class="c-list">
+<li>the <strong>meaning layer</strong>: what do the data mean, and which concepts and obstacles exist?</li>
+<li>the <strong>access layer</strong>: how do you query it in plain language?</li>
+</ul>
+<div class="c-body">P1 and P2 are a continuation of one another: without an explicit ontology (P1), there is no reliable foundation on which to build and test an agent/LLM wiki (P2). This team therefore takes on both projects together, as one continuous development track.</div>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">02</span><span class="c-sectiontitle">Objective</span></div>
+<div class="c-body">Deliver a working proof-of-concept in which:</div>
+<ol class="c-list">
+<li>the data lake is semantically structured through a defensible domain ontology (concepts + obstacles, layer A and layer B), applied to the Elsweide case;</li>
+<li>that same ontology forms the basis for an agent-ready, natural-language interface to the data lake, which shows a source with every answer;</li>
+<li>it is explicitly tested and documented where that interface works and where it breaks (factual correctness assessed separately from the presence of a citation, hallucination, stakeholder differences).</li>
+</ol>
+<div class="c-body">Besides a working PoC, a <strong>well-maintained, documented repository</strong> is an explicit end result, so that a following semester can build directly on this work (see also the link with P3, section 08).</div>
+<div class="c-note"><span class="c-notelabel">A note on ambition</span>Everything in this charter is a floor, not a ceiling. The ontology, the interface, the evaluation framework, the repository — these mark the minimum bar for "done," not a limit on how far the team can take this. The architecture, the depth of the ontology, and how rigorously the interface is tested are the team's own calls to make and defend in the final presentation. Treat unresolved questions — a blind spot with no obvious source, a stakeholder question the assistant keeps getting wrong — as puzzles worth chasing down, not problems to work around. This is a real research group's data lake: the ontology and the interface the team builds could genuinely be used by a resident, a policymaker, or a follow-up team next semester, not just graded and shelved.</div>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">03</span><span class="c-sectiontitle">Scope</span></div>
+<div class="c-scopegrid">
+<div class="c-scopebox"><span class="c-scopelabel-in">In Scope</span>
+<ul class="c-list">
+<li>Domain ontology (layer A) for the Elsweide neighborhood-energy case: concepts, their relationships, and the mapping of each concept to the FyE data source(s) that populate it.</li>
+<li>Obstacle layer (layer B): obstacles categorized as grid/technical · ownership &amp; organization · social support · permitting &amp; spatial planning · economic/business case · climate risk &amp; living environment.</li>
+<li>Explicit analysis of the interplay between concepts and obstacles, and of blind spots (a concept/obstacle without a source).</li>
+<li>Design and build of a no-code/low-code AI interface (e.g. NotebookLM-style, or a lightweight RAG/agent setup) on top of the data lake.</li>
+<li>Evaluation framework: score each answer on (a) is the number correct, (b) is there a source, (c) does it hallucinate — scored separately.</li>
+<li>Design of a stakeholder-specific interface (a resident vs. a grid operator vs. a policymaker ask different things).</li>
+<li>Exploratory review of data licenses versus the AI tools used.</li>
+<li>Documentation: ontology schema, architecture diagram, evaluation table, README, and handover notes.</li>
+</ul>
+</div>
+<div class="c-scopebox"><span class="c-scopelabel-out">Out of Scope</span>
+<ul class="c-list">
+<li>Production hardening, security hardening, or scaling beyond Elsweide (unless time permits).</li>
+<li>Exhaustive legal license research (only an initial risk scan).</li>
+<li>Behavioral simulation with AI personas — that is P3.</li>
+<li>Actually building a digital twin — a possible follow-up project after this semester.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">04</span><span class="c-sectiontitle">Research Questions</span></div>
+<div class="c-subhead">P1 — Structuring</div>
+<ol class="c-list">
+<li>Which concepts exist in the neighborhood in the energy domain (building, grid asset, household, energy flow, ownership, …), and which FyE data source populates each concept?</li>
+<li>Which obstacles stand in the way of realizing a PED (Positive Energy District)? Organize them into clear categories.</li>
+<li>How do concepts and obstacles relate to each other, and where is there a blind spot — a concept/obstacle with no source?</li>
+</ol>
+<div class="c-subhead">P2 — Making Accessible</div>
+<ol class="c-list">
+<li>Can you build a no-code AI assistant that answers neighborhood questions and shows a source with each answer? How do data licenses relate to the tools used?</li>
+<li>Where is the answer correct, and where does the tool produce a citation-decorated wrong answer — and why? The correctness of the number is scored separately from the presence of a citation.</li>
+<li>What does a stakeholder-specific interface look like?</li>
+</ol>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">05</span><span class="c-sectiontitle">Deliverables</span></div>
+<table class="c-table">
+<tr><th>#</th><th>Deliverable</th><th>Linked to</th></tr>
+<tr><td>1</td><td>Elsweide concept map (concepts + obstacles, tested against 3 concrete data anchors)</td><td>Week 1 quick win, P1</td></tr>
+<tr><td>2</td><td>Evaluation table: 3–5 snapshot documents in NotebookLM, 5 stakeholder questions, scored on correctness/source/hallucination</td><td>Week 1 quick win, P2</td></tr>
+<tr><td>3</td><td>Defensible domain ontology (layer A) with explicit relationships</td><td>P1</td></tr>
+<tr><td>4</td><td>Obstacle layer (layer B) with categorization and blind-spot analysis</td><td>P1</td></tr>
+<tr><td>5</td><td>Working PoC: natural-language interface to the data lake with source attribution</td><td>P2</td></tr>
+<tr><td>6</td><td>Detailed evaluation report (correctness/source/hallucination, per question type)</td><td>P2</td></tr>
+<tr><td>7</td><td>Design of stakeholder-specific interfaces</td><td>P2</td></tr>
+<tr><td>8</td><td>License risk scan: data sources vs. AI tools used</td><td>P2</td></tr>
+<tr><td>9</td><td>Maintained repository: README, architecture, ontology schema, evaluation data, handover notes</td><td>P1 + P2</td></tr>
+<tr><td>10</td><td>Final presentation on 14 January 2027</td><td>P1 + P2</td></tr>
+</table>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">06</span><span class="c-sectiontitle">Approach and Phasing</span></div>
+<div class="c-note"><span class="c-notelabel">Note</span>When planning, account for the regular HAN academic breaks (autumn and Christmas holidays) that fall within this period.</div>
+<div class="c-subhead">Phase 0 — 10 September 2026 (kick-off)</div>
+<div class="c-body">Meet &amp; greet with the client, team contract, task division, kick-off assignment (see section 00).</div>
+<div class="c-subhead">Phase 1 — Week 1 (from 10 Sept)</div>
+<div class="c-body">Quick wins for P1 (concept map) and P2 (NotebookLM evaluation table) in parallel. This is not yet an ontology — only once relationships and the layer-A/layer-B split are made explicit and defended does it become one.</div>
+<div class="c-subhead">Phase 2 — ± Week 2–6</div>
+<div class="c-body">Deepen and defend the ontology (layer A/B, interplay, blind spots); architecture design for the access layer starts as soon as the concept set is stable enough.</div>
+<div class="c-subhead">Phase 3 — ± Week 7–12</div>
+<div class="c-body">Build the PoC of the agent/AI interface on top of the (interim) ontology; test iteratively with representative stakeholder questions.</div>
+<div class="c-subhead">Phase 4 — ± Week 13–16</div>
+<div class="c-body">Finalize evaluation, refine stakeholder-specific variants, complete the license scan and blind-spot analysis.</div>
+<div class="c-subhead">Phase 5 — ± Week 17–18</div>
+<div class="c-body">Finalize documentation and repository handover, dry run, final presentation on 14 January 2027.</div>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">07</span><span class="c-sectiontitle">Team and Roles</span></div>
+<div class="c-body">Team of 4 students. The team owns its own role division and working process — the split below is a starting point to adapt, not a fixed structure to follow:</div>
+<ul class="c-list">
+<li><strong>Ontology/domain lead</strong> — owns layer A/B and the concept–obstacle interplay.</li>
+<li><strong>Data-integration lead</strong> — links data sources to concepts, oversees the blind-spot analysis.</li>
+<li><strong>AI/architecture lead</strong> — designs and builds the agent/AI interface.</li>
+<li><strong>Evaluation &amp; documentation lead</strong> — owns the measurement instrument (evaluation table) and the quality of the repository/documentation.</li>
+</ul>
+<div class="c-body">All four members contribute to both P1 and P2, given the substantive dependency between them.</div>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">08</span><span class="c-sectiontitle">Stakeholders</span></div>
+<ul class="c-list">
+<li>Jeroen Veen — client/researcher HAN (owner of the research question and the data lake).</li>
+<li>Supervising lecturer(s) of the minor.</li>
+<li>Proxy stakeholders for the agent interface: resident, grid operator, policymaker (via representative questions; real interviews are not required but recommended where possible).</li>
+<li>The P3 team (behavioral simulation) — potential exchange: P3 may later use the ontology/access layer; this team does not need to actively wait for that at the start.</li>
+<li>A possible follow-up team in the next semester, which can build further on this work (and the outcomes of P3) toward a digital twin of the neighborhood.</li>
+</ul>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">09</span><span class="c-sectiontitle">Constraints and Assumptions</span></div>
+<ul class="c-list">
+<li>Access to the FyE data-lake sources is arranged at the start of the project.</li>
+<li>The required no-code/low-code AI tooling (e.g. NotebookLM) is available under HAN licenses.</li>
+<li>Elsweide is the fixed focus area for the quick win and the first ontology iterations; scaling to other neighborhoods is optional.</li>
+</ul>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">10</span><span class="c-sectiontitle">Risks</span></div>
+<table class="c-table">
+<tr><th>Risk</th><th>Impact</th><th>Mitigation</th></tr>
+<tr><td>Ontology scope grows out of control (too broad/too detailed)</td><td>Delay, no defensible result</td><td>Scope early to Elsweide and the 6 obstacle categories; keep the explicit layer-A/layer-B split</td></tr>
+<tr><td>LLM hallucinates or gives citation-decorated wrong answers</td><td>Undermines credibility of the PoC</td><td>Apply the evaluation framework from week 1; always score correctness separately from citation</td></tr>
+<tr><td>Data licenses conflict with chosen AI tools</td><td>Legal/ethical risk, PoC cannot be shared</td><td>License scan early in the project, not just at the end</td></tr>
+<tr><td>Unclear division of roles between P1 and P2 tasks</td><td>Work falls through the cracks</td><td>Lay down role division explicitly in the team contract, adjust weekly if needed</td></tr>
+<tr><td>Repository/documentation only addressed at the end</td><td>Insufficient time for a proper handover</td><td>Documentation is ongoing work from phase 2 onward, not only in phase 5</td></tr>
+</table>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">11</span><span class="c-sectiontitle">Success Criteria / Definition of Done</span></div>
+<ul class="c-list">
+<li>The ontology (layer A/B) is explicit, substantiated, and defensible in the final presentation.</li>
+<li>The PoC answers a representative set of stakeholder questions, with a transparent score on correctness, source attribution, and hallucination.</li>
+<li>Blind spots in the data lake are identified and substantiated.</li>
+<li>The repository is documented well enough that a new team can onboard without verbal explanation (README, architecture, ontology schema, evaluation data).</li>
+<li>The final presentation on 14 January 2027 addresses both the P1 and P2 research questions.</li>
+</ul>
+<div class="c-body" style="margin-top:14px">These are the floor for what "done" looks like, not the ceiling — where the team takes the ontology, the interface, and the repository beyond this list is entirely its own to decide and defend.</div>
+</div>
+
+<div class="c-section"><div class="c-sectionhead"><span class="c-num">12</span><span class="c-sectiontitle">Communication and Meetings</span></div>
+<ul class="c-list">
+<li>Weekly short check-in with the client/supervisor on progress and blockers.</li>
+<li>One interim progress presentation (timing to be agreed, e.g. around phase 3).</li>
+<li>Touchpoint with the P3 team on any potential link between the ontology/access layer and the behavioral simulation.</li>
+<li>Final presentation on 14 January 2027.</li>
+</ul>
+</div>
+
+</div>
+</x-dc>
+</body>
+</html>
