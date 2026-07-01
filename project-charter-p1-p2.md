@@ -117,10 +117,12 @@ All four members contribute to both P1 and P2, given the substantive dependency 
 ## 8. Stakeholders
 
 - Jeroen Veen — client/researcher HAN (owner of the research question and the data lake).
-- Supervising lecturer(s) of the minor.
+- The team's assigned M3DM supervising lecturer (coach) — every project team gets one from the minor; a genuine stakeholder to involve in decisions, not just an academic assessor to report status to.
 - Proxy stakeholders for the agent interface: resident, grid operator, policymaker (via representative questions; real interviews are not required but recommended where possible).
 - The P3 team (behavioral simulation) — potential exchange: P3 may later use the ontology/access layer; this team does not need to actively wait for that at the start.
 - A possible follow-up team in the next semester, which can build further on this work (and the outcomes of P3) toward a digital twin of the neighborhood.
+
+This list is a starting point, not a ceiling: the team is encouraged to actively bring in additional stakeholders as the project develops — other neighborhood or energy-sector contacts, other HAN research groups, anyone with a real stake in the outcome — rather than treat it as fixed.
 
 ## 9. Constraints and Assumptions
 
@@ -150,7 +152,8 @@ These are the floor for what "done" looks like, not the ceiling — where the te
 
 ## 12. Communication and Meetings
 
-- Weekly short check-in with the client/supervisor on progress and blockers.
+- Weekly short check-in with the client and the supervising lecturer on progress and blockers.
 - One interim progress presentation (timing to be agreed, e.g. around phase 3).
 - Touchpoint with the P3 team on any potential link between the ontology/access layer and the behavioral simulation.
+- Promote the team's work — and that of its stakeholders — within and outside HAN (e.g. through the minor's own channels, HAN communications, LinkedIn, or other PR opportunities); this is an explicit part of the project's value, not an afterthought, and something the team is expected to actively pursue.
 - Final presentation on 14 January 2027.

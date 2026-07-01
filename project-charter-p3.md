@@ -122,10 +122,13 @@ Team of 3 students. The team owns its own role division and working process — 
 ## 8. Stakeholders
 
 - Jeroen Veen — client/researcher HAN.
+- The team's assigned M3DM supervising lecturer (coach) — every project team gets one from the minor; a genuine stakeholder to involve in decisions, not just an academic assessor to report status to.
 - Students of the Computer Vision minor (also run by Jeroen Veen) — evaluation partner.
 - Students of the Master Applied Data Science — evaluation partner.
 - The P1/P2 team — potential exchange of ontology/obstacle categorization; not a hard dependency at the start.
 - A possible follow-up team in the next semester, which uses the digital-twin data-needs analysis as a starting point.
+
+This list is a starting point, not a ceiling: the team is encouraged to actively bring in additional stakeholders as the project develops — other neighborhood or energy-sector contacts, other HAN research groups, anyone with a real stake in the outcome — rather than treat it as fixed.
 
 ## 9. Constraints and Assumptions
 
@@ -163,6 +166,8 @@ These are the floor for what "done" looks like, not the ceiling — where the te
 ## 12. Communication and Meetings
 
 - Short iteration cycles (e.g. biweekly) with accompanying logging.
+- Regular check-ins with the client and the supervising lecturer, not only at fixed evaluation moments.
 - Early and ongoing coordination with Jeroen Veen on scheduling cross-project evaluation sessions.
 - One touchpoint with the P1/P2 team on any overlap between the ontology/access layer and the behavioral simulation.
+- Promote the team's work — and that of its stakeholders — within and outside HAN (e.g. through the minor's own channels, HAN communications, LinkedIn, or other PR opportunities); this is an explicit part of the project's value, not an afterthought, and something the team is expected to actively pursue.
 - Final presentation on 14 January 2027.
