@@ -5,9 +5,9 @@
 | **Client** | Jeroen Veen, Researcher HAN — Future Energy (FyE) Research Group |
 | **Team** | 4 students, Minor Data Driven Decision Making in Business |
 | **Projects** | P1 (Structuring) + P2 (Making Accessible) |
-| **Charter presented** | 3 September 2026 |
+| **Charter presented** | 2 September 2026 |
 | **Team allocation by preference** | week of 7 September 2026 |
-| **Kick-off / meet & greet with client** | 10 September 2026 |
+| **Kick-off / meet & greet with client** | 9 September 2026 |
 | **Final presentation** | 14 January 2027 |
 | **Starter document** | [Understand Electrification — Diana Gragg, Stanford Understand Energy](https://youtu.be/lOOQVyNERrs) |
 
@@ -97,8 +97,8 @@ Besides a working PoC, a **well-maintained, documented repository** is an explic
 
 > When planning, account for the regular HAN academic breaks (autumn and Christmas holidays) that fall within this period.
 
-- **Phase 0 — 10 September 2026 (kick-off):** meet & greet with the client, team contract, task division, kick-off assignment (see section 0).
-- **Phase 1 — week 1 (from 10 Sept):** quick wins for P1 (concept map) and P2 (NotebookLM evaluation table) in parallel. This is not yet an ontology — only once relationships and the layer-A/layer-B split are made explicit and defended does it become one.
+- **Phase 0 — 9 September 2026 (kick-off):** meet & greet with the client, team contract, task division, kick-off assignment (see section 0).
+- **Phase 1 — week 1 (from 9 Sept):** quick wins for P1 (concept map) and P2 (NotebookLM evaluation table) in parallel. This is not yet an ontology — only once relationships and the layer-A/layer-B split are made explicit and defended does it become one.
 - **Phase 2 (± week 2–6):** deepen and defend the ontology (layer A/B, interplay, blind spots); architecture design for the access layer starts as soon as the concept set is stable enough.
 - **Phase 3 (± week 7–12):** build the PoC of the agent/AI interface on top of the (interim) ontology; test iteratively with representative stakeholder questions.
 - **Phase 4 (± week 13–16):** finalize evaluation, refine stakeholder-specific variants, complete the license scan and blind-spot analysis.

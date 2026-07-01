@@ -5,9 +5,9 @@
 | **Client** | Jeroen Veen, Researcher HAN — Future Energy (FyE) Research Group |
 | **Team** | 3 students, Minor Data Driven Decision Making in Business |
 | **Project** | P3 (Exploring) |
-| **Charter presented** | 3 September 2026 |
+| **Charter presented** | 2 September 2026 |
 | **Team allocation by preference** | week of 7 September 2026 |
-| **Kick-off / meet & greet with client** | 10 September 2026 |
+| **Kick-off / meet & greet with client** | 9 September 2026 |
 | **Final presentation** | 14 January 2027 |
 | **Starter document** | [Understand Electrification — Diana Gragg, Stanford Understand Energy](https://youtu.be/lOOQVyNERrs) |
 
@@ -103,8 +103,8 @@ This project runs on an **iterative core loop**, not linear phases:
 5. Refine based on feedback → back to step 1.
 
 Overall timeline:
-- **Phase 0 — 10 September 2026 (kick-off):** meet & greet with the client, team contract, task division, kick-off assignment (see section 0).
-- **Phase 1 — week 1 (from 10 Sept):** quick win: 3 personas built from plausible, general assumptions — no data-lake access exists yet — one intervention, first hypothesis list, done manually/via prompting. A tight, well-understood first pass through the core loop — the launchpad the team builds from all semester, not a limit on where it can go — and the direct input for the running system's first version.
+- **Phase 0 — 9 September 2026 (kick-off):** meet & greet with the client, team contract, task division, kick-off assignment (see section 0).
+- **Phase 1 — week 1 (from 9 Sept):** quick win: 3 personas built from plausible, general assumptions — no data-lake access exists yet — one intervention, first hypothesis list, done manually/via prompting. A tight, well-understood first pass through the core loop — the launchpad the team builds from all semester, not a limit on where it can go — and the direct input for the running system's first version.
 - **Phase 2 (± week 2–8):** once data-lake access is arranged, validate and refine the week-1 personas against the real aggregate distributions; build the first running version of the simulacra system on top of that; first 1–2 iteration rounds of that system including external evaluation session(s); expand to multiple interventions and policy choices.
 - **Phase 3 (± week 9–14):** further iterations of the running system, second/third evaluation round, deepen the behavioral-obstacle hypotheses and the public-support question.
 - **Phase 4 (± week 15–17):** synthesize all learning logs, draft the digital-twin data-needs analysis, freeze and stabilize the system for a reliable live demo.
